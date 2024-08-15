@@ -1,0 +1,44 @@
+
+{   
+    "dims"    :   [
+                        {
+                            "app_nm"     : "Customers",
+                            "src_table_name"  : "silver_olist_customers",
+                            "src_table_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_customers",
+                            "tgt_table_name" : "dim_olist_customers",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_customers"                            
+                        },
+
+                        {   
+                            "app_nm"     : "Orders",
+                            "src_table_name"  : "silver_olist_orders",
+                            "src_table_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_orders",
+                            "tgt_table_name" : "dim_olist_orders",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_orders"                            
+                        },
+
+                        {
+                            "app_nm"     : "Products",
+                            "src_table_name"  : "silver_olist_products",
+                            "src_table_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_products",
+                            "tgt_table_name" : "dim_olist_products",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_products"                            
+                        },
+
+                        {
+                            "app_nm"     : "Sellers",
+                            "src_table_name"  : "silver_olist_sellers",
+                            "src_table_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_sellers",
+                            "tgt_table_name" : "dim_olist_sellers",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_sellers"                            
+                        },
+
+                        {
+                            "app_nm"     : "Order_Ratings",
+                            "src_table_name"  : "silver_olist_order_ratings",
+                            "src_table_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_ratings",
+                            "tgt_table_name" : "dim_olist_order_ratings",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_order_ratings"                            
+                        }
+                    ]
+}

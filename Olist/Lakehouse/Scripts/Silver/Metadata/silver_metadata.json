@@ -1,0 +1,74 @@
+
+{   
+    "silver"    :   [
+                        {
+                            "app_nm"     : "Customers",
+                            "src_file_name"  : "bronze_olist_customers",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_customers",
+                            "src_columns"    : ["customer_id", "customer_email_id", "customer_state", "customer_state_code"], 
+                            "timestamp_format" : "",
+                            "tgt_table_name" : "silver_olist_customers",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_customers"                            
+                        },
+
+                        {   
+                            "app_nm"     : "Orders",
+                            "src_file_name"  : "bronze_olist_orders",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_orders",
+                            "src_columns"    : ["order_id", "customer_id", "order_status", "order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date"],                            
+                            "timestamp_format" : "dd-MM-yyyy hh:mm:ss a",
+                            "tgt_table_name" : "silver_olist_orders",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_orders"                            
+                        },
+
+                        {
+                            "app_nm"     : "Products",
+                            "src_file_name"  : "bronze_olist_products",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_products",
+                            "src_columns"    : ["product_id", "seller_id", "product_category_name", "product_category_name_english", "price", "freight_value", "product_name_length", "product_description_length", "product_photos_qty", "product_weight_g", "product_length_cm", "product_height_cm", "product_width_cm"],
+                            "timestamp_format" : "",
+                            "tgt_table_name" : "silver_olist_products",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_products"                            
+                        },
+
+                        {
+                            "app_nm"     : "Sellers",
+                            "src_file_name"  : "bronze_olist_sellers",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_sellers",
+                            "src_columns"    : ["seller_id", "seller_state", "seller_state_code"],                            
+                            "timestamp_format" : "",
+                            "tgt_table_name" : "silver_olist_sellers",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_sellers"                            
+                        },
+
+                        {
+                            "app_nm"     : "Order_Items",
+                            "src_file_name"  : "bronze_olist_order_items",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_order_items",
+                            "src_columns"    : ["order_id", "order_item_id", "product_id", "seller_id", "shipping_limit_date", "price", "freight_value"],                            
+                            "timestamp_format" : "dd-MM-yyyy hh:mm:ss a",                            
+                            "tgt_table_name" : "silver_olist_order_items",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_items"                            
+                        },
+                        
+                        {
+                            "app_nm"     : "Order_Payments",
+                            "src_file_name"  : "bronze_olist_order_payments",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_order_payments",
+                            "src_columns"    : ["order_id", "payment_sequential", "payment_type", "payment_value"],                            
+                            "timestamp_format" : "",
+                            "tgt_table_name" : "silver_olist_order_payments",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_payments"                            
+                        },
+
+                        {
+                            "app_nm"     : "Order_Ratings",
+                            "src_file_name"  : "bronze_olist_order_ratings",
+                            "src_file_path"  : "<container-name>@<storage-account-name>.dfs.core.windows.net/Bronze/Staging/bronze_olist_order_ratings",
+                            "src_columns"    : ["rating_id", "order_id", "rating_score", "rating_survey_creation_date", "rating_survey_answer_timestamp"],                            
+                            "timestamp_format" : "dd-MM-yyyy hh:mm:ss a",                            
+                            "tgt_table_name" : "silver_olist_order_ratings",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_ratings"                            
+                        }
+                    ]
+}

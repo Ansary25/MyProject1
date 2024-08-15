@@ -1,0 +1,34 @@
+
+{   
+    "facts"    :   [
+                        {
+                            "fact"     : "Sales",
+                            "silver_src_tables"  : {
+                                                    "dim_olist_date" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_date",
+                                                    "silver_olist_order_items" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_items"
+                                                    },                            
+                            "dim_src_tables"  : {
+                                                "dim_olist_customers" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_customers",
+                                                "dim_olist_orders" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_orders",
+                                                "dim_olist_products" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_products",
+                                                "dim_olist_sellers" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_sellers"
+                                                },
+                            "tgt_table_name" : "fact_olist_sales",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Facts/fact_olist_sales"                            
+                        },
+
+                        {
+                            "fact"     : "Payments",
+                            "silver_src_tables"  : {
+                                                    "dim_olist_date" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_date",                                
+                                                    "silver_olist_order_payments" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Silver/silver_olist_order_payments"
+                                                    },                            
+                            "dim_src_tables"  : {
+                                                "dim_olist_customers" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_customers",
+                                                "dim_olist_orders" : "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Dims/dim_olist_orders"
+                                                },
+                            "tgt_table_name" : "fact_olist_order_payments",
+                            "basePath"   : "<container-name>@<storage-account-name>.dfs.core.windows.net/Gold/Facts/fact_olist_order_payments"                            
+                        }
+                    ]
+}
