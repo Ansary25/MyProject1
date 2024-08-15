@@ -211,11 +211,37 @@ Since it's a batch processing, we need to orchestrate the pipeline as a daily lo
 
 <img width="960" alt="24" src="https://github.com/user-attachments/assets/6f5b0e08-26fe-44b6-a5e2-eb22f1c2dd54">
 <br>
+
+<img width="960" alt="25" src="https://github.com/user-attachments/assets/bb34cdb4-bc51-4adf-84fc-4f7a9abcdc51">
+<br>
+
+<img width="960" alt="26" src="https://github.com/user-attachments/assets/1e15d4e1-9d89-409f-93fa-02be8c964f0e">
+<br>
+
+<img width="960" alt="27" src="https://github.com/user-attachments/assets/7d01b7df-f0e7-4cee-a856-44ec9027fd83">
+<br>
+
+<img width="960" alt="28" src="https://github.com/user-attachments/assets/16ea0304-dc40-480c-a40c-c2834aec0937">
+<br>
+
+<img width="960" alt="29" src="https://github.com/user-attachments/assets/cb575e1b-b9e8-4210-94a0-39cff2f92d94">
+<br>
+
+<img width="960" alt="30" src="https://github.com/user-attachments/assets/41eeff94-3670-4dfc-a375-f4a112a47172">
+<br>
+
+<img width="960" alt="31" src="https://github.com/user-attachments/assets/2a45ac79-bec6-4de7-a415-775bcbf71920">
+<br>
+
+<img width="960" alt="32" src="https://github.com/user-attachments/assets/8e7ae309-18ef-450a-9e2a-6ecf5f4f231a">
+<br>
+
+<img width="960" alt="33" src="https://github.com/user-attachments/assets/dc65808c-4587-4e8f-8354-60346a06198d">
+<br>
 <br>
 <br>
 
 Please refer the scripts in the repository and also the video presentation for more understanding.
-
 I've done this project with the working experience in my previous organisation and practical learning.
 
 # <p align="center">Thank You</p>
